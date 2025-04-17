@@ -1,0 +1,115 @@
+/* Estilos gerais do corpo da página */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9fb;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Título principal */
+h1 {
+  color: #6f42c1;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+/* Navegação principal */
+nav {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+/* Remoção de estilo padrão de listas */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cada item da lista de links */
+li {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+li:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+/* Estilo do link */
+a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  color: #4b2aad;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Ícone SVG */
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: #6f42c1;
+  flex-shrink: 0;
+}
+
+/* Descrição abaixo dos links */
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-left: 30px;
+  text-align: left;
+  margin-top: 8px;
+}
+
+/* Estilo do link como card */
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Cabeçalho do card: SVG + título lado a lado */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #4b2aad;
+}
+
+/* Título dentro do header */
+.card-title {
+  color: #4b2aad;
+}
+
+/* Garante que o conteúdo interno fique organizado */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+/* Estilos para telas menores */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
