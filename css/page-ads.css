@@ -1,0 +1,180 @@
+/* ========== Global ========== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Título principal */
+h1 {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #6f42c1;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* ========== Seção de Botões ========== */
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 20px 30px;
+}
+
+/* Estilo comum para <label> e <button> dentro de .botoes */
+.botoes label,
+.botoes button {
+  height: 40px;
+  width: 167.28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Botão "Escolher arquivos" */
+.botoes label {
+  background-color: #007bff;
+  color: white;
+}
+.botoes label:hover {
+  background-color: #0056b3;
+}
+
+/* Botão "Baixar todos" */
+.botoes button {
+  background-color: #28a745;
+  color: white;
+}
+.botoes button:hover {
+  background-color: #218838;
+}
+
+/* Ajuste dos ícones SVG nos botões */
+.botoes svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* Esconde o input real de arquivo */
+input[type="file"] {
+  display: none;
+}
+
+/* ========== Grid de Cards ========== */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-content: center;
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+/* ========== Card Individual ========== */
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 32px;
+  height: 450px;
+  max-width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+/* Título de cada card */
+.card h3 {
+  font-size: 16px;
+  margin: 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Canvas dentro do card */
+.card canvas {
+  max-height: 70%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Botão de download dentro do card */
+.card button {
+  margin-top: auto;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #6f42c1;
+  color: white;
+  cursor: pointer;
+  height: 32px;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
+.card button:hover {
+  background-color: #5a32a3;
+}
+
+/* ========== Spinner de carregamento ========== */
+.spinner {
+  border: 3px solid #fff;
+  border-top: 3px solid #ccc;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+}
+
+/* Link fixo para voltar à página anterior */
+.back-link {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #fff;
+  color: #6f42c1;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 12px 8px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s ease;
+}
+.back-link:hover {
+  background-color: #f0e9ff;
+}
+
+.back-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
