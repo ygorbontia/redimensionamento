@@ -1,4 +1,4 @@
-# 🖼️ Redimensionador de Imagens para Redes Sociais e Anúncios
+# 🖼️ Redimensionador de Imagens para Redes Sociais e Meta Ads
 
 Este projeto é uma aplicação web simples e eficiente que permite **redimensionar imagens diretamente no navegador**, sem precisar de backend ou banco de dados.
 
