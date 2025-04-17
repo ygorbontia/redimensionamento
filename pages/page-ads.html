@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redimensionador de Imagens Meta</title>
+  <link rel="stylesheet" href="../css/page-ads.css">
+</head>
+<body>
+  <a href="javascript:history.back()" class="back-link">
+    <svg class="back-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M15 18l-6-6 6-6" stroke="#6f42c1" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Voltar página
+  </a>
+  <h1>Upload de Imagens para o Meta</h1>
+  <div class="botoes">
+    <label for="upload">
+      <!-- SVG de upload de arquivos -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M5 20h14a1 1 0 0 0 1-1v-6h-2v5H6v-5H4v6a1 1 0 0 0 1 1z"/>
+        <path d="M11 16h2V8h3l-4-5-4 5h3z"/>
+      </svg>
+      Escolher arquivos
+    </label>
+    <input type="file" accept=".jpg,.jpeg,.png" id="upload" multiple />
+    <button id="downloadAll">
+      <!-- SVG de download -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+        <path d="M10 3a1 1 0 011 1v8.586l2.293-2.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 12.586V4a1 1 0 011-1zm-7 13a1 1 0 100 2h14a1 1 0 100-2H3z"/>
+      </svg>
+      Baixar todos
+    </button>
+  </div>
+
+  <div class="grid-container" id="outputContainer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="../js/page-ads.js"></script>
+</body>
+</html>
